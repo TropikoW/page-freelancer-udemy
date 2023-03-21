@@ -19,7 +19,7 @@ html{
     scroll-snap-type: y mandatory;
 }
 body{
-    background-image: linear-gradient(to top, var(--colorgrayhight),var(--colorwhite) 100%);
+    background-image: linear-gradient(to top, var(--colorblack),var(--colorwhite) 100%);
 }
 .shadow{
     -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
@@ -62,7 +62,7 @@ h1,h2,h3{
 }
 /* class */
 .container-nav{
-    background-color: var(--colorsecundary);
+    background-color: var(--colorblack);
 }
 .nav-main{
     display: flex;

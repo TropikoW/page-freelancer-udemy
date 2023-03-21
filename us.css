@@ -40,7 +40,7 @@ p,a{
     text-align: center;
 }
 .container-nav{
-    background-color: var(--colorsecundary);
+    background-color: var(--colorblack);
 }
 .nav-main{
     display: flex;
