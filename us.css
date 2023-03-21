@@ -1,0 +1,118 @@
+:root{
+    --fontmain : 'Krub', sans-serif;
+    --colorwhite : #ffffff;
+    --colorblack : #212121;
+    --colorgray : #757575;
+    --colormain : #ffc107;
+    --colorsecundary : #0097a7;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+/* global */
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,p,a{
+    font-family: var(--fontmain);
+}
+h1{
+    font-size: 3rem;
+}
+h1 span {
+    
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+p,a{
+    font-size: 1.8rem;
+}
+/* class */
+.title-page{
+    text-align: center;
+}
+.container-nav{
+    background-color: var(--colorsecundary);
+}
+.nav-main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-main a{
+    color: var(--colorwhite);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.nav-main a:hover{
+    background-color: var(--colormain);
+    color: var(--colorblack);
+}
+.container{
+    max-width: 120rem;
+    margin : 0 auto;
+}
+
+.container-hero{
+    background-image: url(./img/280667863_729219654776338_1736105155582849299_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+.contain-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 60%);
+}
+.contain-hero h2,.contain-hero p{
+    color: var(--colorwhite);
+}
+.container-ubication{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contact-first{
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-family: var(--fontmain);
+    font-size: 2rem;
+    background-color: var(--colorsecundary);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.contact-first a{
+    color: var(--colorwhite);
+    text-decoration: none;
+}
+.contact-first:hover{
+    background-color: #016a75;
+}
+@media (max-width: 768px) {
+   .nav-main{
+    flex-direction: column;
+    text-align: center;
+   }
+   .contact-first{
+    width: 80%;
+   }
+}
