@@ -65,10 +65,16 @@ p,a{
 .container-hero{
     background-image: url(./img/280667863_729219654776338_1736105155582849299_n.jpg);
     background-size: cover;
-    background-position: top top;
     height: 55rem;
-    background-size: 75rem;
     position: relative;
+    background-position: top top;
+    background-size: 75rem;
+}
+@media (max-width:756px ) {
+   .container-hero{
+    background-size: 45rem;
+    background-position: center center;
+   }
 }
 .contain-hero{
     display: flex;
