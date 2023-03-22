@@ -64,15 +64,16 @@ p,a{
 
 .container-hero{
     background-image: url(./img/280667863_729219654776338_1736105155582849299_n.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 45rem;
+    background-position: top top;
+    height: 55rem;
+    background-size: 75rem;
     position: relative;
 }
 .contain-hero{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: end;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -82,37 +83,9 @@ p,a{
 .contain-hero h2,.contain-hero p{
     color: var(--colorwhite);
 }
-.container-ubication{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.contact-first{
-    margin: 0 auto;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    font-family: var(--fontmain);
-    font-size: 2rem;
-    background-color: var(--colorsecundary);
-    border: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 0.5rem;
-    text-align: center;
-}
-.contact-first a{
-    color: var(--colorwhite);
-    text-decoration: none;
-}
-.contact-first:hover{
-    background-color: #016a75;
-}
 @media (max-width: 768px) {
    .nav-main{
     flex-direction: column;
     text-align: center;
-   }
-   .contact-first{
-    width: 80%;
    }
 }
