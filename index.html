@@ -20,7 +20,7 @@
 
             <nav class="nav-main container">
                 <a id="button-initiate" href="#">Initiate</a>
-                <a id="button-us" href="./us.html">Us</a>
+                <a id="button-about" href="./us.html">About</a>
                 <a id="button-client" href="#">Client</a>
                 <a id="button-contact" href="#">Contact</a>
             </nav>
@@ -147,10 +147,19 @@
                         </div> <!--.container-fields--> 
         
                         <div class="align-right flex">
-                            <input type="submit" value="Send" class="w-sm-100 button">
+                            <input type="submit" value="Send" class="w-sm-100 button" id="btns-form-send">
                         </div>
                     </fieldset>
                 </form>
+            </section>
+
+            <section class="modal modal__show" id="modal">
+                <div class="modal__container">
+                    <img src="img/Data maintenance_Flatline.svg" class="modal__img" alt="https://www.manypixels.co/gallery">
+                    <h2 class="modal__title">Welcome to my page!</h2>
+                    <p class="modal__paragraph">Hello! My page is under maintenance, would you like to leave some feedback? You'll be able to do it soon! Thank you for your visit, and I hope you have a nice day!</p>
+                    <a href="#" class="modal__close" id="btns__close">Close</a>
+                </div>
             </section>
         </main>
     

@@ -85,10 +85,10 @@ h1,h2,h3{
 }
 
 .container-hero{
-    background-image: url(./img/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(./img/Phone\ maintenance_Flatline.png);   
+    background-size: contain;
     height: 45rem;
+    width: 100%;
     position: relative;
     margin-bottom: 2rem;
 }
@@ -201,6 +201,62 @@ h1,h2,h3{
 .field textarea{
     height: 20rem;
 }
+.modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #111111bd;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+.modal__container{
+    display: grid;
+    grid-auto-columns: 100%;
+    gap: 1em;
+    place-items: center;
+    margin: auto;
+    width: 90%;
+    max-width: 60rem;
+    max-height: 90%;
+    background-color: var(--colorwhite);
+    border-radius: 0.6rem;
+    padding: 3em 2.5em;
+}
+.modal__title{
+    font-size: 2.5rem;
+}
+.modal__paragraph{
+    margin-bottom: 1rem;
+}
+.modal__img{
+    width: 90%;
+    max-width: 30rem;
+}
+.modal__close{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--colorblack);
+    padding: 1em 3em;
+    border: 0.1rem solid var(--colorblack);
+    border-radius: 0.6rem;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.modal__close:hover{
+    color: var(--colorblack);
+    background-color: var(--colorwhite);
+}
+.modal__show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
 footer{
     margin-top: 2rem;
     text-align: center;
